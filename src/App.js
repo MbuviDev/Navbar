@@ -5,6 +5,7 @@ import Parcel from "./components/Parcel";
 import Loading from "./components/Loading";
 import Outboundparcel from "./components/Outboundparcel";
 import Expenses from "./components/Expenses";
+import Navbar from "./components/Navbar";
 
 
 function App() {
@@ -12,7 +13,7 @@ function App() {
     <Router>
     <div class="h-screen bg-gray-300">
       {/* <Heading /> */}
-      <nav>
+      {/* <nav>
         <ul>
           <li>
             <Link to="/">Parcel</Link>
@@ -27,7 +28,8 @@ function App() {
             <Link to="/expenses">Expenses</Link>
           </li>
         </ul>
-      </nav>
+      </nav> */}
+      <Navbar/>
       <Routes>
       <Route exact path="/" component={Parcel}/>
       <Route path ="/outboundparcel" component={Outboundparcel} />
